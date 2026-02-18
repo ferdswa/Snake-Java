@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="background" prefHeight="600" prefWidth="800" stylesheets="@stylesheets/highScoreStyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snake.HighScoreController">
+    <children>
+        <Label id="titleLabel" fx:id="titleLabel" layoutX="220" text="HIGH SCORES" />
+        <Button id="returnButton" layoutX="325.0" layoutY="554.0" onAction="#returnButton" prefHeight="32" prefWidth="150" text="Return to Main Menu" />
+      <VBox id="vbox" alignment="CENTER" layoutX="100.0" layoutY="99.0" prefHeight="402.0" prefWidth="600">
+         <children>
+             <Label id="labels" fx:id="score" alignment="CENTER" contentDisplay="CENTER" />
+             <Label id="labels" fx:id="score1" alignment="CENTER" contentDisplay="CENTER" />
+             <Label id="labels" fx:id="score2" alignment="CENTER" contentDisplay="CENTER" />
+             <Label id="labels" fx:id="score3" alignment="CENTER" contentDisplay="CENTER" />
+             <Label id="labels" fx:id="score4" alignment="CENTER" contentDisplay="CENTER" />
+             <Label id="labels" fx:id="score5" alignment="CENTER" contentDisplay="CENTER" />
+             <Label id="labels" fx:id="score6" alignment="CENTER" contentDisplay="CENTER" />
+             <Label id="labels" fx:id="score7" />
+             <Label id="labels" fx:id="score8" alignment="CENTER" contentDisplay="CENTER" />
+         </children>
+      </VBox>
+    </children>
+</Pane>

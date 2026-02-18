@@ -1,0 +1,32 @@
+#background{
+    -fx-background-image: url("../sources/gameover-background.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 800 600 cover;
+    -fx-background-position: center center;
+}
+#scoreLabel{
+    -fx-text-fill: white;
+    -fx-font-family: Impact;
+    -fx-font-weight: bold;
+    -fx-font-size: 48;
+}
+#subLabels{
+    -fx-text-fill: white;
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+#returnButton{
+    -fx-background-color: lightgray;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px ;
+}
+#returnButton:hover{
+    -fx-background-color: darkgrey;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+#el{
+    -fx-font-family: Calibri;
+}
