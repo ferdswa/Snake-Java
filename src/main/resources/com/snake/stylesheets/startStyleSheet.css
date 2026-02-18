@@ -1,0 +1,28 @@
+#background{
+    -fx-background-image: url("../sources/start-background.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 800 600 cover;
+    -fx-background-position: center center;
+}
+#titleLabel{
+    -fx-text-fill: white;
+    -fx-font-family: Impact;
+    -fx-font-weight: bold;
+    -fx-font-size: 64;
+}
+#creditLabel{
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+}
+#startScreenButton{
+    -fx-background-color: lightgray;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px ;
+}
+#startScreenButton:hover{
+    -fx-background-color: darkgrey;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}

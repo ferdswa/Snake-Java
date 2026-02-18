@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane id="background" prefHeight="600" prefWidth="800" stylesheets="@stylesheets/levelOneStyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snake.LevelController">
+    <Label id="scoreLabels" fx:id="scoreLabel" layoutX="10" layoutY="10" text="SCORE: " />
+    <Label id="scoreLabels" fx:id="currentHighScoreLabel" layoutX="570" layoutY="10" text="TO BEAT: " />
+    <Canvas fx:id="levelCanvas" height="552.0" width="800.0" />
+   <Button id="buttons" layoutX="642.0" layoutY="561.0" onAction="#returnButton" prefHeight="25.0" prefWidth="144.0" text="End Game" />
+   <Button id="buttons" fx:id="startButton" layoutX="14.0" layoutY="561.0" onAction="#startGameButton" prefHeight="25.0" prefWidth="144.0" text="Start Game" />
+   <Button fx:id="pauseButton" id="buttons" layoutX="328.0" layoutY="561.0" onAction="#pauseButton" prefHeight="25.0" prefWidth="144.0" text="Pause Game" />
+
+   <Line endY="552.0" startX="800.0" startY="552.0" />
+</Pane>

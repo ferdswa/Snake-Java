@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="background" onMouseClicked="#displayScore" prefHeight="600" prefWidth="800" stylesheets="@stylesheets/gameOverStyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snake.GameOverController">
+   <children>
+      <Label id="scoreLabel" fx:id="scoreLabel" layoutX="298.0" layoutY="388.0" text="SCORE:  " textFill="WHITE" />
+      <Label id="subLabels" layoutX="224.0" layoutY="59.0" text="CLICK TO REVEAL YOUR SCORE" textFill="WHITE" />
+      <TextField fx:id="nameField" layoutX="297.0" layoutY="469.0" />
+      <Label id="subLabels" fx:id="nameLabel" layoutX="217.0" layoutY="464.0" text="Name: " />
+      <Button id="returnButton" fx:id="saveButton" layoutX="454.0" layoutY="469.0" mnemonicParsing="false" onAction="#saveScore" text="Save Score" />
+      <Label id="el" fx:id="errorLabel" layoutX="239.0" layoutY="499.0" prefHeight="50.0" prefWidth="322.0" text="ERROR: Name must be between 1 and 3 characters inclusive!" textFill="#fff600" />
+      <Button id="returnButton" layoutX="334.0" layoutY="559.0" mnemonicParsing="false" onAction="#returnButton" text="Return to Main Menu" />
+      <Label id="subLabels" fx:id="congratsLabel" layoutX="199.0" layoutY="14.0" text="WELL DONE! YOU BEAT THE GAME!" textFill="WHITE" />
+      <Button id="returnButton" fx:id="endlessButton" layoutX="475.0" layoutY="559.0" mnemonicParsing="false" onAction="#endlessMode" text="Level 3 Endless Mode" />
+   </children>
+</Pane>

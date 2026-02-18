@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="background" prefHeight="600" prefWidth="800" stylesheets="@stylesheets/settingsStyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snake.SettingsController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="280.0" text="SETTINGS" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="64.0" />
+         </font>
+      </Label>
+      <Button id="buttons" layoutX="310.0" layoutY="561.0" mnemonicParsing="false" onAction="#returnButton" text="Save and Return to Main Menu" />
+      <VBox alignment="CENTER" layoutX="300.0" layoutY="300.0" prefHeight="204.0" prefWidth="202.0">
+         <children>
+            <CheckBox fx:id="darkCB" mnemonicParsing="false" text="Dark Mode" textFill="WHITE" />
+            <Label prefHeight="50" />
+            <CheckBox fx:id="soundCB" mnemonicParsing="false" selected="true" text="Sound" textFill="WHITE" />
+            <Label prefHeight="50" />
+            <Button id="buttons" alignment="CENTER" mnemonicParsing="false" onAction="#deleteHighScores" text="Clear High Scores File" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="246.0" layoutY="208.0" prefHeight="50.0" prefWidth="310.0">
+         <children>
+            <CheckBox fx:id="shortGameCB" mnemonicParsing="false" text="Short (Level 1: 5 points)" textFill="WHITE" wrapText="true" />
+            <CheckBox fx:id="medGameCB" mnemonicParsing="false" text="Normal (Level 1: 10 points)" textFill="WHITE" wrapText="true" />
+            <CheckBox fx:id="longGameCB" mnemonicParsing="false" text="Long (Level 1: 25 points)" textFill="WHITE" wrapText="true" />
+         </children>
+      </HBox>
+      <Label layoutX="334.0" layoutY="179.0" text="GAME LENGTH:" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="504.0" text="STATUS: You forgot to check a box, so we got the stored option" textFill="#fff600" wrapText="true" />
+   </children>
+</Pane>
